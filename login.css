@@ -10,31 +10,28 @@ html,body{
 
 h1{
     display: inline;
-width: 215px;
-height: 15px;
-
-font-family: 'Spoqa Han Sans Neo';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-color: #000000;
-margin: 0;
+    width: 215px;
+    height: 15px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin: 0;
 }
 .loginContainer{
     position: absolute;
-top: 50%;
-left: 50%;
-width: 350px;
-height: 140px;
-transform: translate(-50%, -50%);
-
-background: #FFFFFF;
-border: 1px solid #DBDBDB;
-box-sizing: border-box;
-border-radius: 5px;
-padding: 18px;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 140px;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 18px;
 }
 
 .loginBtn{
@@ -42,8 +39,7 @@ padding: 18px;
     height: 40px;
     background: #711BFF;
     border-radius: 4px;
-    color: white;
-    
+    color: white; 
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 500;
@@ -66,18 +62,15 @@ padding: 18px;
 
 .idPw{
     display: inline;
-width: 34px;
-height: 15px;
-
-font-family: 'Spoqa Han Sans Neo';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-vertical-align: text-top;
-
-color: #767676;
+    width: 34px;
+    height: 15px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: text-top;
+    color: #767676;
 }
 .idPwImg{
     vertical-align: top;
