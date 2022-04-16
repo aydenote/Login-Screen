@@ -20,28 +20,31 @@
       <h3 class="modal-greeting">
         위니브에서 여러분의 궁금증을 해결하세요! :)
       </h3>
-      <form action="" id="login">
+      <div class="a">
         <input type="text" placeholder="아이디" class="txt-id" />
+        <p class="txt-alertId">아이디를 입력해 주세요.</p>
         <input type="password" placeholder="비밀번호" class="txt-pw" />
-        <div class="con-loginstat">
-          <img
-            src="/위니브 로그인 구현/image/check-box.svg"
-            alt="체크박스"
-            class="check-loginStat"
-          />
-          <p class="txt-loginStat">로그인 상태 유지</p>
-        </div>
-        <button form="login" class="modal-login">로그인</button>
-      </form>
+        <p class="txt-alertPw">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+      </div>
+      <div class="con-loginstat">
+        <img
+          src="/위니브 로그인 구현/image/check-box.svg"
+          alt="체크박스"
+          class="check-loginStat"
+        />
+        <p class="txt-loginStat">로그인 상태 유지</p>
+      </div>
+      <button form="login" class="modal-login">로그인</button>
+
       <div class="con-signUp">
         <a href="" class="link-signUp">회원가입</a>
         <a href="" class="link-findIdPw">아이디/비밀번호 찾기</a>
       </div>
-
-      <p class="txt-line">또는</p>
-
+      <div class="con-line">
+        <p class="txt-line">또는</p>
+      </div>
       <article class="con-link">
-        <a href="" class="link-google">
+        <a href="https://www.google.co.kr/" class="link-google" target="_blank">
           <img
             src="/위니브 로그인 구현/image/google-logo.svg"
             alt="구글"
@@ -49,7 +52,11 @@
           />
           <p class="txt-google">구글 계정으로 로그인</p>
         </a>
-        <a href="" class="link-facebook">
+        <a
+          href="https://ko-kr.facebook.com/"
+          class="link-facebook"
+          target="_blank"
+        >
           <img
             src="/위니브 로그인 구현/image/facebook-logo.svg"
             alt="페이스북"
@@ -57,7 +64,7 @@
           />
           <p class="txt-facebook">페이스북 계정으로 로그인</p>
         </a>
-        <a href="" class="link-naver">
+        <a href="https://www.naver.com/" class="link-naver" target="_blank">
           <img
             src="/위니브 로그인 구현/image/naver-logo.svg"
             alt="네이버"
@@ -65,7 +72,11 @@
           />
           <p class="txt-naver">네이버 계정으로 로그인</p>
         </a>
-        <a href="" class="link-kakao">
+        <a
+          href="https://www.kakaocorp.com/page/"
+          class="link-kakao"
+          target="_blank"
+        >
           <img
             src="/위니브 로그인 구현/image/kakao-logo.svg"
             alt="카카오톡"
@@ -113,8 +124,17 @@
 
       //  id 입력 없이 modal-login 클릭시 안내 메세지 출력
       const modalLogin = document.querySelector(".modal-login");
+      const txtId = document.querySelector(".txt-id");
+      const txtAlertId = document.querySelector(".txt-alertId");
+      const txtAlertPw = document.querySelector(".txt-alertPw");
       modalLogin.addEventListener("click", () => {
-        console.dir(modalLogin);
+        if (txtId.value == "") {
+          txtAlertId.style = "display:block";
+          txtAlertPw.style = "display:none";
+        } else {
+          txtAlertId.style = "display:none";
+          txtAlertPw.style = "display:block";
+        }
       });
     </script>
   </body>
