@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./dropdown.css" />
   </head>
   <body>
-    <article class="con-select">
+    <article class="con_select">
       <p class="title">최애 프로그래밍 언어</p>
       <img class="downImg" src="./icon-Triangle-down.png" alt="dropdown" />
     </article>
@@ -32,12 +32,12 @@
       let flag = 0;
       $(".downImg").click(function () {
         if (flag === 0) {
-          $(".con-select").css({ border: "1px solid #9B51E0" });
+          $(".con_select").css({ border: "1px solid #9B51E0" });
           $(".downImg").attr("src", "./icon-Triangle-up.png");
           $(".option").fadeIn();
           flag = 1;
         } else {
-          $(".con-select").css({ border: "1px solid #C4C4C4" });
+          $(".con_select").css({ border: "1px solid #C4C4C4" });
           $(".downImg").attr("src", "./icon-Triangle-down.png");
           $(".option").fadeOut();
           flag = 0;
