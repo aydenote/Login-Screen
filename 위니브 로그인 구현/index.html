@@ -8,69 +8,78 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section class="con-modal">
-      <header class="con-header">
-        <h1 class="txt-title">로그인 또는 회원가입</h1>
-        <img class="img-cancel" src="./image/close.svg" alt="닫기" />
-      </header>
-      <h3 class="modal-greeting">
-        위니브에서 여러분의 궁금증을 해결하세요! :)
-      </h3>
-      <div class="a">
-        <input type="text" placeholder="아이디" class="txt-id" />
-        <p class="txt-alertId">아이디를 입력해 주세요.</p>
-        <input type="password" placeholder="비밀번호" class="txt-pw" />
-        <p class="txt-alertPw">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
-      </div>
-      <div class="con-loginstat">
-        <img
-          src="./image/check-box.svg"
-          alt="체크박스"
-          class="check-loginStat"
-        />
-        <p class="txt-loginStat">로그인 상태 유지</p>
-      </div>
-      <button form="login" class="modal-login">로그인</button>
-
-      <div class="con-signUp">
-        <a href="" class="link-signUp">회원가입</a>
-        <a href="" class="link-findIdPw">아이디/비밀번호 찾기</a>
-      </div>
-      <div class="con-line">
-        <p class="txt-line">또는</p>
-      </div>
-      <article class="con-link">
-        <a href="https://www.google.co.kr/" class="link-google" target="_blank">
-          <img src="./image/google-logo.svg" alt="구글" class="img-google" />
-          <p class="txt-google">구글 계정으로 로그인</p>
-        </a>
-        <a
-          href="https://ko-kr.facebook.com/"
-          class="link-facebook"
-          target="_blank"
-        >
+    <div class="modal-background">
+      <section class="con-modal">
+        <header class="con-header">
+          <h1 class="txt-title">로그인 또는 회원가입</h1>
+          <img class="img-cancel" src="./image/close.svg" alt="닫기" />
+        </header>
+        <h3 class="modal-greeting">
+          위니브에서 여러분의 궁금증을 해결하세요! :)
+        </h3>
+        <div class="a">
+          <input type="text" placeholder="아이디" class="txt-id" />
+          <p class="txt-alertId">아이디를 입력해 주세요.</p>
+          <input type="password" placeholder="비밀번호" class="txt-pw" />
+          <p class="txt-alertPw">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+        </div>
+        <div class="con-loginstat">
           <img
-            src="./image/facebook-logo.svg"
-            alt="페이스북"
-            class="img-facebook"
+            src="./image/check-box.svg"
+            alt="체크박스"
+            class="check-loginStat"
           />
-          <p class="txt-facebook">페이스북 계정으로 로그인</p>
-        </a>
-        <a href="https://www.naver.com/" class="link-naver" target="_blank">
-          <img src="./image/naver-logo.svg" alt="네이버" class="img-naver" />
-          <p class="txt-naver">네이버 계정으로 로그인</p>
-        </a>
-        <a
-          href="https://www.kakaocorp.com/page/"
-          class="link-kakao"
-          target="_blank"
-        >
-          <img src="./image/kakao-logo.svg" alt="카카오톡" class="img-kakao" />
-          <p class="txt-kakao">카카오톡 계정으로 로그인</p>
-        </a>
-      </article>
-    </section>
+          <p class="txt-loginStat">로그인 상태 유지</p>
+        </div>
+        <button form="login" class="modal-login">로그인</button>
 
+        <div class="con-signUp">
+          <a href="" class="link-signUp">회원가입</a>
+          <a href="" class="link-findIdPw">아이디/비밀번호 찾기</a>
+        </div>
+        <div class="con-line">
+          <p class="txt-line">또는</p>
+        </div>
+        <article class="con-link">
+          <a
+            href="https://www.google.co.kr/"
+            class="link-google"
+            target="_blank"
+          >
+            <img src="./image/google-logo.svg" alt="구글" class="img-google" />
+            <p class="txt-google">구글 계정으로 로그인</p>
+          </a>
+          <a
+            href="https://ko-kr.facebook.com/"
+            class="link-facebook"
+            target="_blank"
+          >
+            <img
+              src="./image/facebook-logo.svg"
+              alt="페이스북"
+              class="img-facebook"
+            />
+            <p class="txt-facebook">페이스북 계정으로 로그인</p>
+          </a>
+          <a href="https://www.naver.com/" class="link-naver" target="_blank">
+            <img src="./image/naver-logo.svg" alt="네이버" class="img-naver" />
+            <p class="txt-naver">네이버 계정으로 로그인</p>
+          </a>
+          <a
+            href="https://www.kakaocorp.com/page/"
+            class="link-kakao"
+            target="_blank"
+          >
+            <img
+              src="./image/kakao-logo.svg"
+              alt="카카오톡"
+              class="img-kakao"
+            />
+            <p class="txt-kakao">카카오톡 계정으로 로그인</p>
+          </a>
+        </article>
+      </section>
+    </div>
     <section class="con-main">
       <img class="img-logo" src="./image/weniv-logo.svg" alt="위니브" />
       <h2 class="main-greeting">위니브를 더 즐겁고 편리하게 이용하세요.</h2>
@@ -79,8 +88,10 @@
     <script>
       // 로그인 창 출력 및 메인 화면 뒤로 숨김
       const mainLogin = document.querySelector(".main-login");
+      const bodyColor = document.querySelector("body");
       mainLogin.addEventListener("click", () => {
         document.querySelector(".con-modal").style.display = "flex";
+        bodyColor.style.backgroundColor = "#6d6d6d";
       });
 
       // cancel 이미지 클릭시 다시 메인 화면 출력
