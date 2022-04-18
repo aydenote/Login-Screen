@@ -20,7 +20,7 @@
 
 ![위니브_로그인_구현_버튼](https://user-images.githubusercontent.com/77476077/163758923-af0b5b57-fdac-4314-a73a-f3c5eb931e9a.gif)
 
-[과제 결과 페이지 바로가기]()
+[과제 결과 페이지 바로가기](https://aydenote.github.io/Login-Screen/%EC%9C%84%EB%8B%88%EB%B8%8C%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%EA%B5%AC%ED%98%84/index.html)
 
 ## 2.기초 로그인
 
