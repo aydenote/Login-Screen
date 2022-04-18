@@ -21,7 +21,7 @@ ul{
     line-height: 14px;
     color: #000000;
 }
-.con_select{
+.conSelect{
     width: 200px;
     height: 40px;
     margin: auto;
@@ -74,6 +74,3 @@ ul{
     cursor: pointer;
 }
 
-a, input, button {
-    outline: 0;
-}
