@@ -97,11 +97,12 @@
       <button class="main-login">로그인</button>
     </section>
     <script>
-      // 로그인 창 출력 및 메인 화면 숨김.
+      // 로그인 창 출력 및 메인 화면 뒤로 숨김
       const mainLogin = document.querySelector(".main-login");
       mainLogin.addEventListener("click", () => {
-        document.querySelector(".con-modal").style.display = "inline";
-        document.querySelector(".con-main").style.display = "none";
+        document.querySelector(".con-modal").style.display = "flex";
+        // document.querySelector(".con-modal").style.display = "inline";
+        // document.querySelector(".con-main").style.display = "none";
       });
 
       // cancel 이미지 클릭시 다시 메인 화면 출력
