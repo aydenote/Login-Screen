@@ -237,7 +237,6 @@ body{
 .link-findIdPw::before{
     content: "|";
     margin: 0px 12px;
-    width: 4px;
     height: 18px;
     font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
