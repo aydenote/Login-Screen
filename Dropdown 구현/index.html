@@ -12,12 +12,13 @@
       <p class="title">최애 프로그래밍 언어</p>
       <img class="downImg" src="./icon-Triangle-down.png" alt="dropdown" />
     </article>
+
     <ul class="option">
-      <li class="python">Python</li>
-      <li class="java">Java</li>
-      <li class="javaScript">JavaScript</li>
-      <li class="c#">C#</li>
-      <li class="C/C++">C/C++</li>
+      <li class="lang">Python</li>
+      <li class="lang">Java</li>
+      <li class="lang">JavaScript</li>
+      <li class="lang">C#</li>
+      <li class="lang">C/C++</li>
     </ul>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -25,6 +26,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      /* jQuery */
       let flag = 0;
       $(".downImg").click(function () {
         if (flag === 0) {
@@ -41,7 +43,16 @@
       });
 
       $(".option").click(function () {
-        console.dir($(".option"));
+        console.dir($(".option").val());
+      });
+
+      /* 자바스크립트 */
+
+      const option = document.querySelector(".option");
+      const selectTitle = document.querySelector(".title");
+      option.addEventListener("click", (event) => {
+        let optionText = event.target.innerText;
+        selectTitle.innerText = optionText;
       });
     </script>
   </body>
