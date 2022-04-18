@@ -33,6 +33,7 @@ ol, ul {
 }
 a{
 	text-decoration: none;
+	color: #000;
 }
 blockquote, q {
 	quotes: none;
@@ -45,4 +46,14 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* IR 기법 */
+.txt-hide {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }

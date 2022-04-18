@@ -88,16 +88,15 @@
     <script>
       // 로그인 창 출력 및 메인 화면 뒤로 숨김
       const mainLogin = document.querySelector(".main-login");
-      const bodyColor = document.querySelector("body");
       mainLogin.addEventListener("click", () => {
         document.querySelector(".con-modal").style.display = "flex";
-        bodyColor.style.backgroundColor = "#6d6d6d";
+        document.querySelector(".modal-background").style.display = "block";
       });
 
       // cancel 이미지 클릭시 다시 메인 화면 출력
       const imgCancel = document.querySelector(".img-cancel");
       imgCancel.addEventListener("click", () => {
-        document.querySelector(".con-modal").style.display = "none";
+        document.querySelector(".modal-background").style.display = "none";
       });
 
       // 로그인 상태 유지 checkbox 클릭시 이미지 변경 및 텍스트 변경.
