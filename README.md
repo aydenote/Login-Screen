@@ -50,6 +50,17 @@
 
 ## 3.Dropdown 구현
 
----
+> ### **동작 설명**
+>
+> 1.  select 메뉴 아래 화살표 이미지 클릭
+>     > ➡ 숨겨진 option들 출력, 위 화살표로 이미지 변경.
+> 2.  option들 마우스 호버
+>     > ➡ option item 색상 변경
+> 3.  option 클릭
+>     > ➡ select 메뉴 타이틀 변경.
 
-[과제 결과 페이지 바로가기]()
+### **동작 미리보기** :
+
+<!-- gif -->
+
+[과제 결과 페이지 바로가기](https://aydenote.github.io/Login-Screen/Dropdown%20%EA%B5%AC%ED%98%84/index.html)

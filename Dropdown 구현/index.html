@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="./dropdown.css" />
   </head>
   <body>
-    <article class="single">
+    <article class="con-select">
       <p class="title">최애 프로그래밍 언어</p>
       <img class="downImg" src="./icon-Triangle-down.png" alt="dropdown" />
     </article>
-
     <ul class="option">
       <li class="lang">Python</li>
       <li class="lang">Java</li>
@@ -20,39 +19,37 @@
       <li class="lang">C#</li>
       <li class="lang">C/C++</li>
     </ul>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
     <script>
-      /* jQuery */
+      const option = document.querySelector(".option");
+      const selectTitle = document.querySelector(".title");
+
       let flag = 0;
       $(".downImg").click(function () {
         if (flag === 0) {
-          $(".single").css({ border: "1px solid #9B51E0" });
+          $(".con-select").css({ border: "1px solid #9B51E0" });
           $(".downImg").attr("src", "./icon-Triangle-up.png");
           $(".option").fadeIn();
           flag = 1;
         } else {
-          $(".single").css({ border: "1px solid #C4C4C4" });
+          $(".con-select").css({ border: "1px solid #C4C4C4" });
           $(".downImg").attr("src", "./icon-Triangle-down.png");
           $(".option").fadeOut();
           flag = 0;
         }
       });
 
-      $(".option").click(function () {
-        console.dir($(".option").val());
-      });
-
-      /* 자바스크립트 */
-
-      const option = document.querySelector(".option");
-      const selectTitle = document.querySelector(".title");
       option.addEventListener("click", (event) => {
         let optionText = event.target.innerText;
         selectTitle.innerText = optionText;
+        $(".downImg").attr("src", "./icon-Triangle-down.png");
+        $(".option").fadeOut();
+        flag = 0;
       });
     </script>
   </body>
