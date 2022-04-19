@@ -181,17 +181,16 @@ body{
 }
 
 .check-loginStat{
+    float: left;
     width: 22px;
     height: 22px;
     margin: 0 8px 20px 28px;
-    display: inline-block;
+
     border: 1px solid #767676;
     border: 0;
     cursor: pointer;
-    float: left;
 }
 .txt-loginStat{
-    display: inline-block;
     float: left;
     margin-top: 1px;
 
@@ -216,7 +215,6 @@ body{
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
     color: #FFFFFF;
 }
 
@@ -309,76 +307,57 @@ body{
 }
 
 a.link-google::before{
-    display: inline-block;
     float: left;
-    margin: 11px 0;
+    margin-top: 12px;
     margin-left: 12px;
     content: "";
-    width: 28px; 
-    height: 28px;
-    background: url('./image/css_sprites.png') -58px -70px;
+    width: 22px; 
+    height: 22px;
+    background-image: url('./image/sprites_normal.png');
+    background-position: -5px -39px;
 }
 .link-facebook{
     border: 1px solid #2D9CDB;
 }
 a.link-facebook::before{
-    display: inline-block;
     float: left;
-    margin: 11px 0;
+    margin-top: 12px;
     margin-left: 12px;
     content: "";
-    width: 28px; 
-    height: 28px;
-    background: url('./image/css_sprites.png')  -10px -70px;
+    width: 13px;
+    height: 24px;
+    background-image: url('./image/sprites_normal.png');
+    background-position: -5px -5px;
 }
 .link-naver{
     border: 1px solid #00BF18;
 }
 a.link-naver::before{
-    display: inline-block;
     float: left;
-    margin: 11px 0;
+    margin-top: 12px;
     margin-left: 12px;
     content: "";
-    width: 28px; 
-    height: 28px;
-    background: url('./image/css_sprites.png') -106px -70px;
-}
-.link-kakao{
-    
-    border: 1px solid #F2C94C;
-}
-a.link-kakao::before{
-    display: inline-block;
-    float: left;
-    margin: 11px 0;
-    margin-left: 12px;
-    content: "";
-    width: 28px; 
-    height: 28px;
-    background: url('./image/css_sprites.png') -10px -118px;
-}
-.img-google{
-    float: left;
-    margin: 11px 0;
-    margin-left: 12px;
-}
-.img-facebook{
-    float: left;
-    margin: 11px 0;
-    margin-left: 12px;
-}
-.img-naver{
-    float: left;
-    margin: 11px 0;
-    margin-left: 12px;
+    width: 22px; 
+    height: 22px;
+    background-image: url('./image/sprites_normal.png');
+    background-position: -5px -103px;
 }
 
-.img-kakao{
-    float: left;
-    margin: 11px 0;
-    margin-left: 12px;
+.link-kakao{
+    border: 1px solid #F2C94C;
 }
+
+a.link-kakao::before{
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+    content: "";
+    width: 22px; 
+    height: 22px;
+    background-image: url('./image/sprites_normal.png');
+    background-position: -5px -71px;;
+}
+
 
 .txt-google, .txt-facebook, .txt-naver, .txt-kakao{
     display: inline-block;
@@ -389,4 +368,13 @@ a.link-kakao::before{
     font-size: 16px;
     line-height: 20px;
     color: #767676;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .a.link-google::before, a.link-naver::before, a.link-kakao::before {
+        background-image: url('./image/sprites_retina.png');
+        background-size: 22px 22px;
+        width: 22px; 
+        height: 22px;
+    }
 }
