@@ -307,14 +307,56 @@ body{
 .link-google{
     border: 1px solid #767676;
 }
+
+a.link-google::before{
+    display: inline-block;
+    float: left;
+    margin: 11px 0;
+    margin-left: 12px;
+    content: "";
+    width: 28px; 
+    height: 28px;
+    background: url('./image/css_sprites.png') -58px -70px;
+}
 .link-facebook{
     border: 1px solid #2D9CDB;
+}
+a.link-facebook::before{
+    display: inline-block;
+    float: left;
+    margin: 11px 0;
+    margin-left: 12px;
+    content: "";
+    width: 28px; 
+    height: 28px;
+    background: url('./image/css_sprites.png')  -10px -70px;
 }
 .link-naver{
     border: 1px solid #00BF18;
 }
+a.link-naver::before{
+    display: inline-block;
+    float: left;
+    margin: 11px 0;
+    margin-left: 12px;
+    content: "";
+    width: 28px; 
+    height: 28px;
+    background: url('./image/css_sprites.png') -106px -70px;
+}
 .link-kakao{
+    
     border: 1px solid #F2C94C;
+}
+a.link-kakao::before{
+    display: inline-block;
+    float: left;
+    margin: 11px 0;
+    margin-left: 12px;
+    content: "";
+    width: 28px; 
+    height: 28px;
+    background: url('./image/css_sprites.png') -10px -118px;
 }
 .img-google{
     float: left;
