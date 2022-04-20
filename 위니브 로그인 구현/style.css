@@ -313,8 +313,9 @@ a.link-google::before{
     content: "";
     width: 22px; 
     height: 22px;
-    background-image: url('./image/sprites_normal.png');
-    background-position: -5px -39px;
+    background-image: url('./image/css_sprites_retina.png');
+    background-position: -52px -10px;
+    background-size: 116px 83px;
 }
 .link-facebook{
     border: 1px solid #2D9CDB;
@@ -326,9 +327,11 @@ a.link-facebook::before{
     content: "";
     width: 13px;
     height: 24px;
-    background-image: url('./image/sprites_normal.png');
-    background-position: -5px -5px;
+    background-image: url('./image/css_sprites_retina.png');
+    background-position: -93px -10px;
+    background-size: 116px 83px;
 }
+
 .link-naver{
     border: 1px solid #00BF18;
 }
@@ -339,8 +342,9 @@ a.link-naver::before{
     content: "";
     width: 22px; 
     height: 22px;
-    background-image: url('./image/sprites_normal.png');
-    background-position: -5px -103px;
+    background-image: url('./image/css_sprites_retina.png');
+    background-position: -10px -10px;
+    background-size: 116px 83px;
 }
 
 .link-kakao{
@@ -354,8 +358,9 @@ a.link-kakao::before{
     content: "";
     width: 22px; 
     height: 22px;
-    background-image: url('./image/sprites_normal.png');
-    background-position: -5px -71px;;
+    background-image: url('./image/css_sprites_retina.png');
+    background-position: -10px -52px;;
+    background-size: 116px 83px;
 }
 
 
@@ -370,11 +375,3 @@ a.link-kakao::before{
     color: #767676;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-    .a.link-google::before, a.link-naver::before, a.link-kakao::before {
-        background-image: url('./image/sprites_retina.png');
-        background-size: 22px 22px;
-        width: 22px; 
-        height: 22px;
-    }
-}
