@@ -23,21 +23,17 @@ body{
     z-index: -1;
 }
 
-.img-logo{
-    width: 138px;
-    height: 40px;
+.main-logo{
     margin: 30px 181px 28px;
 }
 .main-greeting{
     width: 269px;
-    height: 20px;
     font-family:'SpoqaHanSansNeo-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     margin: auto;
-    /* identical to box height */
     color: #000000;
 }
 
@@ -97,7 +93,6 @@ body{
 }
 .txt-title{
     width: 144px;
-    height: 20px;
     margin: 20px auto 18px;
     margin-right: 148px;
     font-family: 'SpoqaHanSansNeo-Regular';
@@ -110,7 +105,6 @@ body{
 
 .img-cancel{
     width: 16px;
-    height: 16px;
     margin: 22px 24px;
     margin-left: 0;
 }
@@ -120,7 +114,6 @@ body{
 
 .modal-greeting{
     width: 369px;
-    height: 24px;
     margin: 26px 0 24px 24px;
     font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
@@ -132,7 +125,6 @@ body{
 
 .txt-id{
     width: 472px;
-    height: 50px;
     margin: 0 24px 10px 24px;
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
@@ -143,7 +135,6 @@ body{
 .txt-alertId{
     display: none;
     width: 139px;
-    height: 18px;
     font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
     font-weight: 400;
@@ -154,7 +145,6 @@ body{
 }
 .txt-pw{
     width: 472px;
-    height: 50px;
     margin: 0 24px 16px 24px;
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
@@ -166,7 +156,6 @@ body{
 .txt-alertPw{
     display: none;
     width: 248px;
-    height: 18px;
     font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
     font-weight: 400;
@@ -183,7 +172,6 @@ body{
 .check-loginStat{
     float: left;
     width: 22px;
-    height: 22px;
     margin: 0 8px 20px 28px;
 
     border: 1px solid #767676;
@@ -222,7 +210,8 @@ body{
     cursor: pointer;
 }
 .con-signUp{
-    font-size: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .link-signUp{
@@ -237,8 +226,7 @@ body{
 }
 
 .link-findIdPw{
-    width: 125px;
-    height: 18px;
+    
     margin: 0;
     font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
@@ -265,7 +253,12 @@ body{
 }
 
 .txt-line{
-    margin: 30px 0 20px 0;
+    display: flex;
+    align-items: center;
+    width: 472px;
+    margin: 30px auto 20px;
+    gap: 1em;
+
     font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
     font-weight: 400;
@@ -273,46 +266,37 @@ body{
     line-height: 18px;
     color: #767676;
 }
-
-.txt-line::before{
-    content: "";
-    position: absolute;
-    width: 210px;
-    height: 1px;
-    left: 24px;
-    top: 40px;
-    background: #C4C4C4;
-}
-
+.txt-line::before, 
 .txt-line::after{
-    content: "";
-    position: absolute;
-    width: 210px;
-    height: 1px;
-    left: 286px;
-    top: 40px;
-    background: #C4C4C4;
-}
-.link-google, .link-facebook, .link-naver, .link-kakao{
+  content: ' '; 
+  flex-grow: 1;
+  height: 1px;
+  opacity: 0.4;
+  background-color: #C4C4C4;
+} 
+
+.link-google, 
+.link-facebook, 
+.link-naver, 
+.link-kakao{
     display: block;
     width: 472px;
     height: 50px;
-    background: #FFFFFF;
+    margin: 0 auto 10px;
     border-radius: 5px;
-    margin: auto;
-    margin-bottom: 10px;
+    background: #FFFFFF;
 }
+
 .link-google{
     border: 1px solid #767676;
 }
 
 a.link-google::before{
-    float: left;
-    margin-top: 12px;
-    margin-left: 12px;
     content: "";
+    float: left;
     width: 22px; 
     height: 22px;
+    margin: 12px 0 0 12px;
     background-image: url('./image/css_sprites_retina.png');
     background-position: -52px -10px;
     background-size: 116px 83px;
@@ -321,12 +305,11 @@ a.link-google::before{
     border: 1px solid #2D9CDB;
 }
 a.link-facebook::before{
-    float: left;
-    margin-top: 12px;
-    margin-left: 12px;
     content: "";
+    float: left;
     width: 13px;
     height: 24px;
+    margin: 12px 0 0 12px;
     background-image: url('./image/css_sprites_retina.png');
     background-position: -93px -10px;
     background-size: 116px 83px;
@@ -336,12 +319,11 @@ a.link-facebook::before{
     border: 1px solid #00BF18;
 }
 a.link-naver::before{
-    float: left;
-    margin-top: 12px;
-    margin-left: 12px;
     content: "";
+    float: left;
     width: 22px; 
     height: 22px;
+    margin: 12px 0 0 12px;
     background-image: url('./image/css_sprites_retina.png');
     background-position: -10px -10px;
     background-size: 116px 83px;
@@ -352,12 +334,11 @@ a.link-naver::before{
 }
 
 a.link-kakao::before{
-    float: left;
-    margin-top: 12px;
-    margin-left: 12px;
     content: "";
+    float: left;
     width: 22px; 
     height: 22px;
+    margin: 12px 0 0 12px;
     background-image: url('./image/css_sprites_retina.png');
     background-position: -10px -52px;;
     background-size: 116px 83px;
