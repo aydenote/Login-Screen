@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -11,8 +17,7 @@ html,body{
 h1{
     display: inline;
     width: 215px;
-    height: 15px;
-    font-family: 'Spoqa Han Sans Neo';
+    font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -37,10 +42,11 @@ h1{
 .loginBtn{
     width: 318px;
     height: 40px;
+    margin: 16px 0;
     background: #711BFF;
     border-radius: 4px;
     color: white; 
-    font-family: 'Spoqa Han Sans Neo';
+    font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -62,9 +68,7 @@ h1{
 
 .idPw{
     display: inline;
-    width: 34px;
-    height: 15px;
-    font-family: 'Spoqa Han Sans Neo';
+    font-family: 'SpoqaHanSansNeo-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;

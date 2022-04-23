@@ -10,7 +10,11 @@
   <body>
     <article class="conSelect">
       <p class="title">최애 프로그래밍 언어</p>
-      <img class="downImg" src="./icon-Triangle-down.png" alt="dropdown" />
+      <img
+        class="downImg"
+        src="./image/icon-Triangle-down.png"
+        alt="dropdown"
+      />
     </article>
     <ul class="option">
       <li class="lang">Python</li>
@@ -33,12 +37,12 @@
       $(".downImg").click(function () {
         if (flag === 0) {
           $(".conSelect").css({ border: "1px solid #9B51E0" });
-          $(".downImg").attr("src", "./icon-Triangle-up.png");
+          $(".downImg").attr("src", "./image/icon-Triangle-up.png");
           $(".option").fadeIn();
           flag = 1;
         } else {
           $(".conSelect").css({ border: "1px solid #C4C4C4" });
-          $(".downImg").attr("src", "./icon-Triangle-down.png");
+          $(".downImg").attr("src", "./image/icon-Triangle-down.png");
           $(".option").fadeOut();
           flag = 0;
         }
@@ -47,7 +51,7 @@
       option.addEventListener("click", (event) => {
         let optionText = event.target.innerText;
         selectTitle.innerText = optionText;
-        $(".downImg").attr("src", "./icon-Triangle-down.png");
+        $(".downImg").attr("src", "./image/icon-Triangle-down.png");
         $(".option").fadeOut();
         flag = 0;
       });
