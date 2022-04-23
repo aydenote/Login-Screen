@@ -36,17 +36,22 @@
 
 ---
 
-## 주제 : 기초 로그인
-
-## 동작 설명 :
+## 주제 : 기초 로그인 페이지
 
 ## 적용 기술 :
 
+> - <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
+> - <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
+
 ## 적용 기법 :
 
-## 동작 미리보기 :
+> 1.  웹접근성을 위한 IR 기법 사용.
 
-## [과제 결과 페이지 바로가기]()
+## 결과 미리보기 :
+
+![위니브 기초 로그인](https://user-images.githubusercontent.com/77476077/164896168-cc87d356-f0b9-4850-9e30-b296bb1688f8.PNG)
+
+[과제 결과 페이지 바로가기](https://aydenote.github.io/Login-Screen/기초%20로그인%20구현/index.html))
 
 ---
 

@@ -8,16 +8,18 @@
 *{
     box-sizing: border-box;
 }
+
 html,body{
     margin: 0;
     padding: 0;
     background-color: white;
 }
+
 a{
     text-decoration: none;
 }
 
-h1{
+h2{
     display: inline;
     width: 215px;
     font-family: 'SpoqaHanSansNeo-Regular';
@@ -55,15 +57,14 @@ h1{
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    
 }
+
 .loginBtn img{
     vertical-align: bottom;
 }
 
 .findIdPw{
     float: left;
-    
 }
 
 .signup{
@@ -80,6 +81,16 @@ h1{
     vertical-align: text-top;
     color: #767676;
 }
+
 .idPwImg{
     vertical-align: top;
+}
+
+.txtHide{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
